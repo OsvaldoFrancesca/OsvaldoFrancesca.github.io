@@ -1,0 +1,148 @@
+/* RESET & VARIABILI */
+:root {
+    --bg-color: #0a0a12;       /* Nero bluastro molto scuro */
+    --card-bg: #13131f;        /* Leggermente più chiaro */
+    --accent-color: #00ff9d;   /* Verde Neon Cyberpunk */
+    --text-color: #e0e0e0;     /* Bianco sporco */
+    --dim-text: #888899;       /* Grigio per testi secondari */
+    --font-tech: 'Roboto Mono', monospace;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-tech);
+    line-height: 1.6;
+    padding: 2rem;
+}
+
+/* LAYOUT */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* HERO SECTION */
+.hero-section {
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 2rem;
+    margin-bottom: 3rem;
+}
+
+h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+}
+
+.subtitle {
+    color: var(--dim-text);
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+}
+
+.status-badge {
+    display: inline-block;
+    background: rgba(0, 255, 157, 0.1);
+    color: var(--accent-color);
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    border: 1px solid var(--accent-color);
+    margin-top: 1rem;
+}
+
+/* GRID PROGETTI */
+.section-title {
+    color: var(--accent-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+/* CARD DESIGN (L'aspetto differenziante) */
+.card {
+    background: var(--card-bg);
+    border: 1px solid #333;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Effetto Hover "Attivazione" */
+.card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-color);
+    box-shadow: 0 0 15px rgba(0, 255, 157, 0.2);
+}
+
+.card h3 {
+    margin: 1rem 0;
+    font-size: 1.3rem;
+}
+
+.tag {
+    font-size: 0.75rem;
+    background: #222;
+    padding: 2px 8px;
+    border-radius: 4px;
+    color: var(--dim-text);
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    text-decoration: none;
+    color: var(--accent-color);
+    font-weight: bold;
+    border: 1px solid var(--accent-color);
+    padding: 5px 15px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: var(--accent-color);
+    color: var(--bg-color);
+}
+
+/* CARD VUOTA */
+.empty-slot {
+    border: 1px dashed #444;
+    opacity: 0.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* FOOTER */
+footer {
+    margin-top: 4rem;
+    border-top: 1px solid #333;
+    padding-top: 2rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--dim-text);
+}
+
+footer a {
+    color: var(--text-color);
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    color: var(--accent-color);
+}
