@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Osvaldo Francesca</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <div class="container">
         <header class="hero-section">
-            <h1 class="glitch-text">Osvaldo Francesca</h1>
+            <h1>Osvaldo Francesca</h1>
             <p class="subtitle">COMPUTER ENGINEERING STUDENT // UNREAL DEV</p>
             <div class="status-badge">🟢 SYSTEM ONLINE</div>
         </header>
@@ -20,49 +22,54 @@
             <h2 class="section-title">PROJECT_LOGS</h2>
             
             <div class="grid">
-                <article class="card">
-                    <div class="card-header">
-                        <span class="tag">C++</span> <span class="tag">UE5</span>
-                    </div>
-                    <h3>PROJECT_SHOOTER</h3>
-                    <p>Third-Person Shooter prototype featuring advanced AI mechanics and combat system.</p>
-                    <a href="#" class="btn">VIEW_DATA</a>
-                </article>
-
-                <article class="card">
-                    <div class="card-header">
-                        <span class="tag">PYTHON</span> <span class="tag">AUTOMATION</span>
-                    </div>
-                    <h3>FILE_SORTER_V1</h3>
-                    <p>Automation script for intelligent file system management and directory cleanup.</p>
-                    <a href="https://github.com/OsvaldoFrancesca/Python-File-Sorter" class="btn">VIEW_CODE</a>
-                </article>
                 
                 <article class="card">
-                    <div class="card-header">
-                        <span class="tag">JS</span> <span class="tag">CANVAS</span>
+                    <div class="card-image-container">
+                        <img src="https://github.com/user-attachments/assets/d6888461-2eeb-40a1-8aea-e9700fdd6fe5" alt="Procedural Dungeon Generator Demo" class="card-image">
                     </div>
-                    <h3>CYBER_SNAKE_V3</h3>
-                    <p>Arcade engine with recursive game loop and dynamic difficulty scaling. No install required.</p>
-                    
-                    <a href="https://osvaldofrancesca.github.io/Cyber-Snake/" target="_blank" class="btn">INIT_GAME</a>
-                    
-                    <div style="margin-top: 10px; font-size: 0.8rem;">
-                        <a href="https://github.com/OsvaldoFrancesca/Cyber-Snake" style="color: #888; text-decoration: none;">[VIEW_SOURCE]</a>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <span class="tag">UE5</span>
+                            <span class="tag">ALGORITHMS</span>
+                        </div>
+                        <h3>ANIMATED_DUNGEON</h3>
+                        <p>Grid-based terrain generation system featuring runtime visualization loop and biome logic gates.</p>
+                        <a href="https://github.com/OsvaldoFrancesca/UE5-Animated-Dungeon" target="_blank" class="btn">VIEW_SYSTEM</a>
                     </div>
                 </article>
 
-                <article class="card empty-slot">
-                    <h3>[SLOT_EMPTY]</h3>
-                    <p>New projects incoming...</p>
+                <article class="card">
+                    <div class="card-content">
+                        <div class="card-header">
+                            <span class="tag">JS</span>
+                            <span class="tag">WEBGL</span>
+                        </div>
+                        <h3>CYBER_SNAKE_V3</h3>
+                        <p>Arcade engine with recursive game loop and dynamic difficulty scaling. Playable directly in browser.</p>
+                        <a href="https://osvaldofrancesca.github.io/Cyber-Snake/" target="_blank" class="btn">INIT_GAME</a>
+                    </div>
                 </article>
+
+                <article class="card">
+                    <div class="card-content">
+                        <div class="card-header">
+                            <span class="tag">PYTHON</span>
+                            <span class="tag">AUTOMATION</span>
+                        </div>
+                        <h3>FILE_SORTER_V1</h3>
+                        <p>Automation script for intelligent file system management and directory cleanup (O(1) Lookup).</p>
+                        <a href="https://github.com/OsvaldoFrancesca/Python-File-Sorter" target="_blank" class="btn">VIEW_CODE</a>
+                    </div>
+                </article>
+                
             </div>
         </main>
 
         <footer>
             <p>CONTACT_UPLINK:</p>
             <div class="social-links">
-                <a href="https://github.com/OsvaldoFrancesca" target="_blank">GITHUB</a> / <a href="mailto:osvafra623@gmail.com">EMAIL</a>
+                <a href="https://github.com/OsvaldoFrancesca" target="_blank">GITHUB</a> / 
+                <a href="mailto:osvafra623@gmail.com">EMAIL</a>
             </div>
         </footer>
     </div>
